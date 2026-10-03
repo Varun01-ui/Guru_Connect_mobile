@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "GuruConnect",
+    "slug": "guruconnect",
+    "scheme": "guruconnect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.guruconnect.app"
+    },
+    "android": {
+      "package": "in.guruconnect.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-splash-screen",
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "GuruConnect uses your photos so you can choose a profile picture."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
